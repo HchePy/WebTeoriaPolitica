@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revista Didáctica: Filosofía y Ciencia Política</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <h1>Revista Didáctica: Filosofía y Ciencia Política</h1>
+    </header>
+    <main>
+        <section class="votacion">
+            <h2>Vota por Este Artículo</h2>
+            <button id="like-button">👍 Like (<span id="like-count">0</span>)</button>
+            <button id="dislike-button">👎 Dislike (<span id="dislike-count">0</span>)</button>
+        </section>
+        <section class="introduccion">
+            <h2>Introducción</h2>
+            <p>La ciencia política es una disciplina que estudia el poder, las instituciones políticas y los sistemas de gobierno mediante el uso de métodos empíricos y teóricos. Se ocupa de analizar cómo se toman decisiones colectivas, cómo se distribuye el poder y cuáles son los comportamientos y estructuras que definen la vida política en una sociedad. Surge como una combinación de diversas ciencias sociales y está influenciada por ramas como la filosofía política, la sociología y la economía, lo que le permite abarcar tanto el análisis normativo como el descriptivo de los fenómenos políticos.</p>
+        </section>
+
+        <section class="disciplinas">
+            <h2>Disciplinas que Contribuyen al Estudio de la Política</h2>
+            <article>
+                <h3>Ciencia Política</h3>
+                <p>Es la disciplina central que se ocupa del estudio de la política. Analiza los sistemas de gobierno, el comportamiento político, las instituciones y las relaciones de poder. Busca comprender cómo se distribuye el poder y cómo se toman decisiones.</p>
+                <h4>Áreas de Enfoque:</h4>
+                <ul>
+                    <li>Teoría política</li>
+                    <li>Política comparada</li>
+                    <li>Relaciones internacionales</li>
+                    <li>Políticas públicas</li>
+                    <li>Administración pública</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Sociología</h3>
+                <p>Estudia la relación entre estructuras sociales y comportamiento humano, crucial para entender los procesos políticos.</p>
+                <h4>Contribuciones Clave:</h4>
+                <ul>
+                    <li>Movimientos sociales</li>
+                    <li>Participación política y ciudadanía</li>
+                    <li>Poder y desigualdad social</li>
+                    <li>Sociología del Estado</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Economía</h3>
+                <p>Contribuye al estudio de la política analizando cómo las decisiones políticas impactan la distribución de recursos.</p>
+                <h4>Tema de Interés:</h4>
+                <ul>
+                    <li>Políticas fiscales y monetarias</li>
+                    <li>Economía política internacional</li>
+                    <li>Desarrollo económico</li>
+                    <li>Distribución de la riqueza y pobreza</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Derecho</h3>
+                <p>Proporciona el marco normativo sobre el cual se desarrolla la política.</p>
+                <h4>Áreas de Relevancia:</h4>
+                <ul>
+                    <li>Derecho constitucional</li>
+                    <li>Derecho internacional</li>
+                    <li>Derechos humanos</li>
+                    <li>Sistemas judiciales</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Filosofía</h3>
+                <p>Explora las ideas y principios éticos que subyacen a las formas de gobierno.</p>
+                <h4>Conceptos Clave:</h4>
+                <ul>
+                    <li>Justicia y equidad</li>
+                    <li>Derechos y libertades</li>
+                    <li>Teorías del contrato social</li>
+                    <li>Naturaleza del poder y el Estado</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Historia</h3>
+                <p>Permite entender el contexto de las instituciones y movimientos políticos que han dado forma a las sociedades modernas.</p>
+                <h4>Áreas Clave:</h4>
+                <ul>
+                    <li>Historia de las instituciones políticas</li>
+                    <li>Revoluciones y cambios políticos</li>
+                    <li>Historia de las ideas políticas</li>
+                    <li>Biografías de líderes políticos</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Antropología</h3>
+                <p>Estudia cómo las culturas organizan el poder y la autoridad.</p>
+                <h4>Tema Importante:</h4>
+                <ul>
+                    <li>Organización social y poder</li>
+                    <li>Relaciones de parentesco y política</li>
+                    <li>Política en sociedades indígenas</li>
+                    <li>Estado y violencia</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Psicología</h3>
+                <p>Se enfoca en comprender el comportamiento individual y colectivo en contextos políticos.</p>
+                <h4>Áreas de Investigación:</h4>
+                <ul>
+                    <li>Psicología del liderazgo</li>
+                    <li>Psicología del votante</li>
+                    <li>Persuasión política</li>
+                    <li>Psicología de masas y propaganda</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Geografía</h3>
+                <p>Analiza cómo el espacio y el territorio influyen en los procesos políticos.</p>
+                <h4>Contribuciones Clave:</h4>
+                <ul>
+                    <li>Geopolítica</li>
+                    <li>Fronteras y territorios</li>
+                    <li>Distribución de recursos</li>
+                    <li>Conflictos territoriales</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Relaciones Internacionales</h3>
+                <p>Estudia las interacciones entre los Estados y otros actores globales.</p>
+                <h4>Tema Importante:</h4>
+                <ul>
+                    <li>Teorías de relaciones internacionales</li>
+                    <li>Diplomacia y negociación</li>
+                    <li>Conflictos y seguridad global</li>
+                    <li>Organizaciones internacionales</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Comunicación</h3>
+                <p>Analiza cómo se transmiten ideas y cómo los medios influyen en la opinión pública y en la política.</p>
+                <h4>Áreas de Interés:</h4>
+                <ul>
+                    <li>Comunicación de masas</li>
+                    <li>Opinión pública y medios</li>
+                    <li>Marketing político</li>
+                    <li>Redes sociales y política</li>
+                </ul>
+            </article>
+        </section>
+
+        
+
+        <section class="filosofia-ciencia">
+            <h2>Impacto Histórico de la Filosofía en la Ciencia Política</h2>
+            <p>Antes de dar repuesta al planteamiento debemos conocer un breve resumen del significado de filosofía así podremos dar una respuesta mas acertada a la cuestión.
+
+                La filosofía es el estudio de las cuestiones fundamentales sobre la existencia, el conocimiento, la realidad, la ética y el significado de la vida. Busca respuestas a preguntas profundas mediante el uso de la razón y el pensamiento crítico. Se organiza en varias ramas, como la metafísica (naturaleza de la realidad), la epistemología (naturaleza del conocimiento), la ética (valores morales) y la lógica (principios del razonamiento correcto). Entendiendo a la filosofía como el intento por comprender el mundo y la vida humana desde una perspectiva racional, analítica y reflexiva. 
+                
+                La Filosofía ha tenido un impacto profundo en el surgimiento de la Ciencia Política, ya que muchas de las ideas fundamentales sobre el poder, el gobierno, la justicia y la sociedad provienen de la reflexión filosófica. Desde la Antigua Grecia, filósofos como Platón y Aristóteles discutieron cuestiones sobre la naturaleza del poder, el tipo de gobierno ideal y los principios de justicia, temas que son el núcleo de la ciencia política moderna. Estas primeras discusiones filosóficas sentaron las bases conceptuales y normativas para el análisis político.</p>
+        </section>
+
+        <section class="definicion">
+            <h2>Definición de Ciencia Política</h2>
+            <p>Comenzaremos definiendo Ciencia y Política.
+
+                Ciencia
+                La ciencia es un conjunto de conocimientos sistemáticos obtenidos mediante la observación, la experimentación y el razonamiento. Su objetivo es descubrir las leyes generales que rigen los fenómenos naturales y sociales, explicando y previendo su comportamiento. Se caracteriza por su metodología basada en el rigor, la verificación empírica y la búsqueda de la objetividad.
+                
+                Política
+                La política es el conjunto de actividades que tienen como objetivo la toma de decisiones colectivas dentro de una sociedad o grupo, generalmente relacionadas con la organización del poder, el gobierno y la distribución de recursos. También puede referirse a la lucha por el poder, el manejo de conflictos sociales y la implementación de políticas públicas. Se asocia con instituciones como los gobiernos, partidos políticos, y organizaciones que influyen en la vida pública y en cómo se organiza una sociedad.
+                
+                Conociendo ya el significado de Ciencias y Política y basándonos en el  Diccionario de Política, de Norberto Bobbio, Nicola Matteucci y Gianfranco Pasquino, la Ciencia Política se entiende como el estudio sistemático de los fenómenos políticos mediante el uso de metodologías empíricas y analíticas. Su objetivo es describir, explicar y predecir comportamientos, estructuras y procesos políticos, como la organización del poder, los sistemas de gobierno, la participación política, los partidos, las elecciones y las políticas públicas.
+                La ciencia política se distingue por su enfoque empírico y descriptivo, en contraste con la filosofía política, que suele tener un carácter más normativo o prescriptivo. Utiliza herramientas metodológicas propias de las ciencias sociales, como la estadística, la sociología y la economía, para analizar la realidad política de forma objetiva y basada en datos verificables.</p>
+        </section>
+        
+        
+    </main>
+    <footer class="footer">
+        <p>
+            <a href="mailto:ernestojps@estudiantes.uci.cu" class="footer-link">
+                <i class="fas fa-envelope"></i> ernestojps@estudiantes.uci.cu
+            </a>
+            |
+            <a href="https://github.com/HchePy" class="footer-link" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </p>
+        <p>© 2024 Revista Didáctica: Filosofía y Ciencia Política. Todos los derechos reservados.</p>
+    </footer>
+    
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
